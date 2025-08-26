@@ -1,0 +1,29 @@
+class Vehicle:
+    def move(self):
+        print("This vehicle is moving in some way...")  # Base method, overridden in subclasses
+
+# Subclass with unique move behavior
+class Car(Vehicle):
+    def move(self):
+        print("Zooming down the highway with turbo speed! 🚗💨")
+
+# Subclass with unique move behavior
+class Plane(Vehicle):
+    def move(self):
+        print("Soaring through the clouds at supersonic altitudes! ✈️☁️")
+
+# Unique addition: Hovercraft for differentiation from other students
+class Hovercraft(Vehicle):
+    def move(self):
+        print("Gliding smoothly over land and water with anti-gravity tech! 🚀🌊")
+
+# Creating instances
+my_car = Car()
+my_plane = Plane()
+my_hovercraft = Hovercraft()
+
+# Demonstrating polymorphism
+vehicles = [my_car, my_plane, my_hovercraft]
+print("All vehicles moving:")
+for vehicle in vehicles:
+    vehicle.move()
